@@ -44,13 +44,7 @@ private
   end
 
   def  beverage_params
-    params.require(:beverage).permit(
-      :name, 
-      :volume, 
-      :abv, 
-      :price, 
-      :brewery_id,
-      user_ids: [])
+    params.require(:beverage).permit(:name, :volume, :abv, :price, :brewery_id)
   end
 
 end
